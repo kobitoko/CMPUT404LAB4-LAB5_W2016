@@ -65,6 +65,7 @@ target/
 .idea/
 ~*
 \#*
+*~
 
 # Virtual environment name
 venv/

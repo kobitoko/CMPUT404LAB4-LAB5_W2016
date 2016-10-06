@@ -1,3 +1,67 @@
+/* Lab never said it had to be a good design! */
+
+/* Animation taken from http://www.w3schools.com/css/css3_animations.asp */
+@keyframes example {
+    0%   {background-color: black;}
+    30%  {background-color: red;}
+    60%  {background-color: blue;}
+    90% {background-color: green;}
+    100% {background-color: black;}
+}
+@keyframes textwow {
+	0%   {font-size: 2em;}
+   30%  {font-size: 3em;}
+   60%  {font-size: 2em;}
+   90% {font-size: 2em;}
+   100% {font-size: 2em;}
+}
 a {
-    color: rgb(255, 0, 0);
+    color: rgb(255, 0, 125);
+    font-weight: bold;
+    animation-name: textwow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+h1 {
+	padding: 10px;
+	padding-left: 40%;
+	color: lightblue;
+	transform: rotate(25deg);
+   width: 100px;
+   height: 100px;
+   background-color: black;
+}
+h2 {
+	color: white;
+	animation-name: example;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+li {
+	border: 3px groove black;
+	margin: 5px 5px 5px 5px;
+}
+ul {
+	border: 2px dotted black;
+	background-color: rgba(180, 180, 180, 0.7);
+}
+input {
+	margin: 5px 5px 5px 5px;
+	border: 10px solid red;
+}
+label {
+	margin: 5px 5px 5px 5px;
+	border: 2px dotted green;
+	text-transform: capitalize;
+}
+form {
+	border: 4px groove gray;
+	background-color: rgba(180, 180, 180, 0.7);
+}
+body {
+	/* http://lorempixel.com/ */
+	background-image: url("http://lorempixel.com/600/400/cats");
+	background-repeat: repeat;
+	background-size: cover;
+	background-attachment: scroll;
 }
